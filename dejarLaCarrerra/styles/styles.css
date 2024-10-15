@@ -1,0 +1,177 @@
+:root {
+    --color-primary: #E9967A; /*COLOR DEL FONDO*/
+    --color-text-primary: #333333; /*COLOR DE TEXTO */
+    --color-text-secondary: #666666; /*SEGUNDO COLOR DE TEXTO*/
+    --color-background: #FFFFFF; /*FONDO BLANCO*/
+    --color-footer: #1F2937; /* COLOR DEL FOOTER*/
+    --color-button: #4B5563; /*COLOR DE LOS BOTONES */
+    --color-button-text: #FFFFFF; /*TEXTO DE LOS BOTONES*/
+    --color-border: #E5E7EB; /* COLOR DE LOS BORDES */
+  }
+  /* NO ME TOQUEN LOS COLORES WEONES SINO DEJO LA CAGÁ Y NO SE TITULA NADIE */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+  
+  .header {
+    background-color: var(--color-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    color: var(--color-text-primary);
+  }
+  
+  .contenido-principal {
+    background-color: var(--color-primary);
+    padding: 2rem 0;
+  }
+  
+  .titulo-pagina {
+    
+    text-align: center;
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .menu-item {
+    background-color: var(--color-background);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-width:2px;
+    border-color: #1F2937;
+  }
+  
+  .menu-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .menu-item-content {
+    padding: 5px;
+  }
+  
+  .menu-item-title {
+    color: var(--color-text-primary);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item-description {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .añadir-orden {
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .eliminar-plato {
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-order-button:hover {
+    background-color: #374151; /*HOVER DE LOS BOTONES*/
+  }
+  
+  .view-order-button {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .view-order-button:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
+  }
+  
+  .footer {
+    background-color: var(--color-footer);
+    color: var(--color-background);
+    padding: 1%;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  
+  .footer-nav a {
+    color: var(--color-background);
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info {
+    font-size: 0.9rem;
+    margin-top: 1%;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
+  .cuadro-login {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.boton-login {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
